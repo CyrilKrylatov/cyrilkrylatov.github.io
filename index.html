@@ -85,6 +85,12 @@
 			.pageBreak {
 				page-break-before: always;
 			}
+
+			.grid {
+				display: grid;
+				grid-auto-flow: column;
+				grid-gap: 2em;
+			}
 		</style>
 	</head>
 	<body>
@@ -93,34 +99,35 @@
 			<p>Actuellement ✌️ UI developer ✌️ à Paris.</p>
 		</header>
 		<main>
-			<section>
-				<h2>Ce que j'aime (et je suis payé pour, parfait)</h2>
-				<ul>
-					<li>HTML, CSS&nbsp;;</li>
-					<li>intégration de newsletters responsives,</li>
-					<li>Vanilla (UI), <del>jQuery,</del> React (UI)&nbsp;;</li>
-					<li>Symfony (Twig), précédemment Magento / WordPress&nbsp;;</li>
-					<li>beaucoup de veille.</li>
-				</ul>
+			<section class="grid">
+				<div>
+					<h2>Ce que j'aime (et je suis payé pour, parfait)</h2>
+					<ul>
+						<li>HTML, CSS&nbsp;;</li>
+						<li>intégration de newsletters responsives,</li>
+						<li>Vanilla (UI), <del>jQuery,</del> React (UI)&nbsp;;</li>
+						<li>Symfony (Twig), précédemment Magento / WordPress&nbsp;;</li>
+						<li>beaucoup de veille.</li>
+					</ul>
+				</div>
+				<div>
+					<h2>Comment je le fais</h2>
+					<ul>
+						<li>sur macOS,</li>
+						<li>avec <a href="http://smilesoftware.com/TextExpander/index.html">TextExpander</a>,</li>
+						<li>sur <a href="https://www.jetbrains.com/fr-fr/webstorm/">WebStorm</a>&nbsp;;</li>
+						<li>beaucoup de <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a>…</li>
+						<li>… et de <a href="http://www.vanseodesign.com/css/dry-principles/">DRY</a></li>
+						<li>… sans oublier <a href="http://smacss.com/">SMACSS&nbsp;;</a></li>
+						<li>avec le formidable <a href="http://docs.emmet.io/">Emmet</a>&nbsp;;</li>
+						<li>je connais bien <a href="http://getbootstrap.com/">Bootstrap</a>&nbsp;;</li>
+						<li>je pousse tout ça avec <a href="http://git-scm.com/">Git</a>.</li>
+					</ul>
+				</div>
 			</section>
 
 			<section>
-				<h2>Comment je le fais</h2>
-				<ul>
-					<li>sur macOS,</li>
-					<li>avec <a href="http://smilesoftware.com/TextExpander/index.html">TextExpander</a>,</li>
-					<li>sur <a href="https://www.jetbrains.com/fr-fr/webstorm/">WebStorm</a>&nbsp;;</li>
-					<li>beaucoup de <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a>…</li>
-					<li>… et de <a href="http://www.vanseodesign.com/css/dry-principles/">DRY</a></li>
-					<li>… sans oublier <a href="http://smacss.com/">SMACSS&nbsp;;</a></li>
-					<li>avec le formidable <a href="http://docs.emmet.io/">Emmet</a>&nbsp;;</li>
-					<li>je connais bien <a href="http://getbootstrap.com/">Bootstrap</a>&nbsp;;</li>
-					<li>je pousse tout ça avec <a href="http://git-scm.com/">Git</a>.</li>
-				</ul>
-			</section>
-
-			<section class="pageBreak">
-				<h2>Où et quand je le fais</h2>
+				<h2>Où et depuis quand je le fais</h2>
 
 				<h3>
 					Août 2019 - maintenant / UI developer @ <a href="https://comeup.com/">ComeUp</a> (ex <a href="https://5euros.com/">5euros.com</a>)
@@ -171,7 +178,7 @@
 					<li>refacto du code legacy dans des templates Twig en modules réutilisables,</li>
 					<li>TMA venue des utilisateurs.</li>
 				</ul>
-				<h3>
+				<h3 class="pageBreak">
 					Octobre 2011 - Août 2014 / intégrateur (Magento, WordPress, intégrations en dur) @ <a href="http://colorz.fr">Colorz</a>
 				</h3>
 				<ul>
@@ -182,7 +189,7 @@
 					<li>refacto de codes legacies.</li>
 				</ul>
 
-				<h3>juin 2011 - octobre 2011 / développeur Web junior @ Quatre Vents :</h3>
+				<h3>Juin 2011 - octobre 2011 / développeur Web junior @ Quatre Vents :</h3>
 				<ul>
 					<li>intégration de newsletters B2B faites par des graphistes print (oui),</li>
 					<li>création de sites évènementiels (support IE6 / 7, j'ai connu)&nbsp;;</li>
