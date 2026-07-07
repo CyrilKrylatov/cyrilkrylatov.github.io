@@ -2,9 +2,10 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8" />
-		<title>Cyril Krylatov's resume | UI developer (Magento, WordPress, Symfony), living in Paris.</title>
+		<title>Cyril Krylatov — Développeur front-end senior, référent HTML/CSS/JS</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="CV de Cyril Krylatov | UI Developer" />
+		<meta name="description" content="CV de Cyril Krylatov, développeur front-end senior et référent HTML/CSS/JS. 12 ans sur un produit e-commerce (ComeUp). Design system, Bootstrap 5, performance, accessibilité, Stimulus, Symfony/Twig." />
+        <meta name="theme-color" content="#4578BC">
 		<style>
 			/* Quick reset */
 
@@ -61,6 +62,11 @@
 			    color: #000;
 			}
 
+            a:focus-visible {
+                outline: 2px solid;
+                outline-offset: 2px;
+            }
+
 			/* ----------------------------------------------------------
 			  Transitions
 			---------------------------------------------------------- */
@@ -84,7 +90,7 @@
 			   ------------------------------------------------------- */
 
 			.pageBreak {
-				page-break-before: always;
+				break-before: page;
 			}
 
 			.grid {
@@ -97,41 +103,65 @@
                 font-weight: 600;
             }
 		</style>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Cyril Krylatov",
+                "jobTitle": "Développeur front-end senior",
+                "description": "Référent front-end HTML/CSS/JS depuis 12 ans sur un produit e-commerce. Design system, performance, accessibilité.",
+                "url": "https://cyrilou.me/",
+                "email": "cv@cyrilou.me",
+                "sameAs": [
+                    "https://blog.cyrilou.me/",
+                    "https://github.com/CyrilKrylatov"
+                ],
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "ComeUp",
+                    "url": "https://comeup.com/"
+                },
+                "knowsAbout": [
+                    "HTML",
+                    "CSS",
+                    "Sass",
+                    "JavaScript",
+                    "Stimulus",
+                    "Bootstrap 5",
+                    "Design Systems",
+                    "Web Performance",
+                    "Accessibility",
+                    "Symfony",
+                    "Twig"
+                ]
+            }
+        </script>
 	</head>
 	<body>
 		<header>
-			<h1>Salut, c'est Cyril, et voilà mon CV.</h1>
-			<p>Développeur front-end senior, référent HTML/CSS/JS depuis 12 ans sur le même produit e-commerce. Design system, performance et accessibilité.</p>
+			<h1>Cyril Krylatov, développeur front-end senior</h1>
+			<p>Référent HTML/CSS/JS depuis 12 ans sur le même produit e-commerce. Design system, performance et accessibilité.</p>
 		</header>
 		<main>
-			<section class="grid">
-				<div>
-					<h2>Ce que j'aime (et je suis payé pour, parfait)</h2>
-					<ul>
-						<li>HTML, CSS&nbsp;;</li>
-                        <li>Performance front,</li>
-                        <li>Accessibilité,</li>
-						<li>Intégration de newsletters responsives,</li>
-						<li>Vanilla (UI), <del>jQuery,</del> React (UI)&nbsp;;</li>
-						<li>Symfony (Twig), précédemment Magento / WordPress&nbsp;;</li>
-						<li>beaucoup de veille.</li>
-					</ul>
-				</div>
-				<div>
-					<h2>Comment je le fais</h2>
-					<ul>
-						<li>sur macOS,</li>
-						<li>avec <a href="http://smilesoftware.com/TextExpander/index.html">TextExpander</a>,</li>
-						<li>sur <a href="https://www.jetbrains.com/fr-fr/webstorm/">WebStorm</a>&nbsp;;</li>
-						<li>beaucoup de <a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a>…</li>
-						<li>… et de <a href="http://www.vanseodesign.com/css/dry-principles/">DRY</a></li>
-						<li>… sans oublier <a href="http://smacss.com/">SMACSS&nbsp;;</a></li>
-						<li>avec le formidable <a href="http://docs.emmet.io/">Emmet</a>&nbsp;;</li>
-						<li>je connais bien <a href="http://getbootstrap.com/">Bootstrap</a>&nbsp;;</li>
-						<li>je pousse tout ça avec <a href="http://git-scm.com/">Git</a>.</li>
-					</ul>
-				</div>
-			</section>
+            <section>
+                <h2>Stack et méthodes</h2>
+                <dl>
+                    <dt>Langages et frameworks</dt>
+                    <dd>HTML sémantique, CSS moderne (custom properties, container queries, cascade layers), SASS, Vanilla JavaScript, Stimulus. Bootstrap 5 en profondeur.</dd>
+
+                    <dt>Templating et intégration back</dt>
+                    <dd>Twig / Symfony. Anciennement Magento, WordPress.</dd>
+
+                    <dt>Méthodes CSS</dt>
+                    <dd><a href="http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/">BEM</a>, <a href="http://smacss.com/">SMACSS</a>, Approche design tokens, mobile-first, defensive.</dd>
+
+                    <dt>Qualité et process</dt>
+                    <dd>Recettage systématique avant mise en production, code review du JS écrit par les développeurs back.</dd>
+
+                    <dt>Sujets qui me tiennent à cœur</dt>
+                    <dd>Performance web, accessibilité, intégration d'e-mails responsives, veille active.</dd>
+                </dl>
+            </section>
 
 			<section>
 				<h2>Où et depuis quand je le fais</h2>
@@ -140,7 +170,7 @@
 					Août 2019 - maintenant / UI developer @ <a href="https://comeup.com/">ComeUp</a> (ex <a href="https://5euros.com/">5euros.com</a>)
 				</h3>
 				<dl>
-                    <dt>Référent front-end depuis 7+ ans sur le même produit</dt>
+                    <dt>Référent front-end : 7 ans chez ComeUp, 12 ans sur le produit</dt>
                     <dd>
                         Marketplace de services (ComeUp). Continuité rare qui m'a permis de piloter le codebase front sur la durée, de refactorer par cycles, et de conduire des changements structurels sans interrompre le delivery. Seul intervenant sur le HTML et le CSS, auteur de la majorité du JavaScript ; le JS écrit par les développeurs back passe par ma code review avant merge. <a href="https://blog.cyrilou.me/blog/2024-10-01-10-ans-a-soccuper-du-front-du-meme-site-comment-ca-va/">Retour d'expérience détaillé sur mon blog</a>.
                     </dd>
@@ -235,21 +265,12 @@
 			</section>
 			<section>
 				<h2>Envie de me contacter ?</h2>
-				<p>N'hésitez pas : <span class="js-writeMail">cyril.krylatov chez gmail</span> !</p>
+                <address>
+                    <a href="mailto:cv@cyrilou.me">cv@cyrilou.me</a> —
+                    <a href="https://blog.cyrilou.me/">blog</a> —
+                    <a href="https://github.com/CyrilKrylatov">GitHub</a>
+                </address>
 			</section>
 		</footer>
-        <script>
-            // allez un peu de JS genre je sais en faire.
-            const mailElement = document.querySelector(".js-writeMail");
-            const domain = "cyrilou";
-            const user = "cv";
-            const mail = `${user}@${domain}.me`;
-            let linkElement = document.createElement("a");
-            let textLinkElement = document.createTextNode(mail);
-            linkElement.appendChild(textLinkElement);
-            linkElement.href = `mailto:${mail}`;
-            mailElement.innerHTML = "";
-            mailElement.appendChild(linkElement);
-        </script>
 	</body>
 </html>
