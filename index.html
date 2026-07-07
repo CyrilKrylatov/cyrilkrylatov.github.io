@@ -92,12 +92,16 @@
 				grid-auto-flow: column;
 				grid-gap: 2em;
 			}
+
+            dt {
+                font-weight: 600;
+            }
 		</style>
 	</head>
 	<body>
 		<header>
 			<h1>Salut, c'est Cyril, et voilà mon CV.</h1>
-			<p>Actuellement ✌️ UI developer ✌️ à Paris.</p>
+			<p>Développeur front-end senior, référent HTML/CSS/JS depuis 12 ans sur le même produit e-commerce. Design system, performance et accessibilité.</p>
 		</header>
 		<main>
 			<section class="grid">
@@ -105,7 +109,9 @@
 					<h2>Ce que j'aime (et je suis payé pour, parfait)</h2>
 					<ul>
 						<li>HTML, CSS&nbsp;;</li>
-						<li>intégration de newsletters responsives,</li>
+                        <li>Performance front,</li>
+                        <li>Accessibilité,</li>
+						<li>Intégration de newsletters responsives,</li>
 						<li>Vanilla (UI), <del>jQuery,</del> React (UI)&nbsp;;</li>
 						<li>Symfony (Twig), précédemment Magento / WordPress&nbsp;;</li>
 						<li>beaucoup de veille.</li>
@@ -133,18 +139,38 @@
 				<h3>
 					Août 2019 - maintenant / UI developer @ <a href="https://comeup.com/">ComeUp</a> (ex <a href="https://5euros.com/">5euros.com</a>)
 				</h3>
-				<ul>
-					<li>amélioration et refacto continuelle du code front (CSS Grid, CSS Variables, etc.) ;</li>
-					<li>mise en place de classes atomic pour réduire les régressions et effets de bords ;</li>
-					<li>mise en place de tests front avec Cypress ;</li>
-					<li>amélioration des performances front du site ;</li>
-					<li>développement de l'accessibilité (RGAA) ;</li>
-					<li>mise en places de solutions inhérentes au SEO ;</li>
-					<li>force de proposition concernant les choix d'UX ;</li>
-					<li>suppression de jQuery au profit de Vanilla ;</li>
-					<li>mise à jour de Bootstrap v4 à sa v5 ;</li>
-					<li>refacto du legacy présent depuis la création du site.</li>
-				</ul>
+				<dl>
+                    <dt>Référent front-end depuis 7+ ans sur le même produit</dt>
+                    <dd>
+                        Marketplace de services (ComeUp). Continuité rare qui m'a permis de piloter le codebase front sur la durée, de refactorer par cycles, et de conduire des changements structurels sans interrompre le delivery. Seul intervenant sur le HTML et le CSS, auteur de la majorité du JavaScript ; le JS écrit par les développeurs back passe par ma code review avant merge. <a href="https://blog.cyrilou.me/blog/2024-10-01-10-ans-a-soccuper-du-front-du-meme-site-comment-ca-va/">Retour d'expérience détaillé sur mon blog</a>.
+                    </dd>
+
+                    <dt>Design System interne — conception, implémentation, documentation</dt>
+                    <dd>
+                        Conception et maintenance d'un design system bâti sur Bootstrap 5 : thème Sass unifié (couleurs, typographie, spacing, breakpoints), tokens exposés en
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">custom properties CSS</a>
+                        pour permettre la variation runtime, conventions de nommage, composants standardisés à partir des primitives Bootstrap. J'ai également écrit et je maintiens la page de documentation interne qui sert de référence à toute l'équipe.
+                    </dd>
+
+                    <dt>Industrialisation du framework CSS</dt>
+                    <dd>Rationalisation de l'arbre d'imports Bootstrap (retrait des modules inutilisés), consolidation des feuilles Sass, découpage par entrées Webpack. Objectif tenu : un CSS livré léger, prévisible, sans redondance ni styles ad hoc.</dd>
+
+                    <dt>Sortie progressive de jQuery vers Vanilla JS et Stimulus</dt>
+                    <dd>Refactoring continu du legacy JavaScript : suppression des dépendances superflues, réécriture en vanilla puis structuration via des controllers Stimulus. Résultat : moins de dépendances, code plus testable, meilleure performance au parsing, découplage HTML/JS.</dd>
+
+                    <dt>Trois refontes complètes de l'identité visuelle</dt>
+                    <dd>Migration du CSS et du HTML à chaque changement d'identité, en continu, sans gel du produit. Chaque refonte a servi à consolider le socle : passage des styles ad hoc à un thème Sass structuré, puis au design system actuel.</dd>
+
+                    <dt>Performance et accessibilité, mesurées et non négociables</dt>
+                    <dd>
+                        Suivi régulier des <a href="https://developers.google.com/search/docs/appearance/core-web-vitals?hl=fr">Core Web Vitals</a> sur les pages critiques : chasse aux repaints et reflows, contrôle de la CLS et de l'INP, préchargement raisonné des ressources bloquantes. Mêmes exigences côté accessibilité : HTML sémantique, navigation clavier, gestion du focus dans les composants interactifs (modales, dropdowns), contrastes vérifiés. Perf et a11y sont vérifiées au même titre à chaque évolution front.
+                    </dd>
+
+                    <dt>Développement continu du produit</dt>
+                    <dd>
+                        Intégration régulière de nouvelles pages et de nouveaux composants, responsive par défaut, sécurisés par du <a href="https://defensivecss.dev/">Defensive CSS</a> pour absorber les contenus utilisateurs imprévus.
+                    </dd>
+				</dl>
 
 				<h3>
 					Janvier 2017 - août 2019 / UI developer @ <a href="https://betaseries.com/">BetaSeries</a>
