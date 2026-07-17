@@ -93,7 +93,45 @@
 			.pageBreak {
 				break-before: page;
 			}
-		</style>
+
+			/* ----------------------------------------------------------
+			   Dark mode
+			   ---------------------------------------------------------- */
+
+            @media (prefers-color-scheme: dark) {
+                html {
+                    background: #121212;
+                }
+
+                body {
+                    color: #e6e6e6;
+                    background-color: #121212;
+                }
+
+                ::-moz-selection {
+                    color: #fff;
+                    background: rgba(143, 181, 224, .3);
+                }
+
+                ::selection {
+                    color: #fff;
+                    background: rgba(143, 181, 224, .3);
+                }
+
+                a {
+                    color: #8fb5e0;
+                }
+
+                a:focus,
+                a:hover {
+                    color: #a4c5e8;
+                }
+
+                a:active {
+                    color: #fff;
+                }
+            }
+        </style>
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
