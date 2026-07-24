@@ -7,22 +7,9 @@ Référent HTML/CSS/JS. 15 ans d'expérience, dont 12 à piloter le front d'une 
 ### Langages et frameworks
 
 - HTML sémantique
-- CSS moderne : custom properties, container queries
-- SASS
+- CSS moderne : approche design tokens, defensive CSS, custom properties, container queries…
 - Vanilla JavaScript, Stimulus
 - Bootstrap 5 en profondeur
-
-### Templating côté serveur
-
-- Twig / Symfony
-
-### Méthodes CSS
-
-- BEM
-- SMACSS
-- Approche design tokens
-- Mobile-first
-- Defensive CSS
 
 ### Qualité et process
 
@@ -37,7 +24,7 @@ Référent HTML/CSS/JS. 15 ans d'expérience, dont 12 à piloter le front d'une 
 
 - Marketplace de services ; pilotage du codebase front sur la durée
 - Refactoring par cycles et changements structurels sans interrompre le delivery
-- Seul intervenant sur le HTML et le CSS, auteur de la majorité du JavaScript
+- Seul intervenant sur le HTML et le CSS, mise en place de d’architecture JavaScript
 - Code review du JS écrit par les développeurs back avant merge
 - [Retour d'expérience détaillé sur mon blog](https://blog.cyrilou.me/blog/2024-10-01-10-ans-a-soccuper-du-front-du-meme-site-comment-ca-va/)
 
